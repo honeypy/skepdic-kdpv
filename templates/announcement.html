@@ -1,0 +1,40 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}КДПВ для Энциклопедии Скептика{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Основной шаблон "Скептика"</a>
+            <a class="navbar-brand" href="{{ url_for('announcement') }}">Шаблон для анонсов мероприятий</a>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                {{ wtf.quick_form(form, enctype='multipart/form-data') }}
+            </div>
+            <div class="col-md-4">
+                <b>Пример:</b>
+            <img src="{{ url_for('static', filename='announce_example.jpg') }}">
+            </div>
+        </div>
+        {% if image %}
+            <a href='/static/uploads/image.jpg' download>
+                <button class="btn btn-lg">Скачать созданную картинку</button>
+            </a>
+            <img src="{{ url_for('static', filename=image) }}">
+
+        {% endif %}
+    </div>
+{% endblock %}
