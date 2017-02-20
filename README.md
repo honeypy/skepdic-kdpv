@@ -2,7 +2,7 @@
 
 Simple web-application that generate image for post http://vk.com/skepdic.
 Input: 
-![Before](https://ibb.co/cUH30a)
+![Before](https://image.ibb.co/nOQCtv/smrhhh.jpg)
 Output:
 ![After](https://github.com/honeypy/skepdic-kdpv/blob/master/static/announce_example.jpg)
 
