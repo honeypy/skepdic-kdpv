@@ -16,7 +16,7 @@ Output:
 ![After](https://github.com/honeypy/skepdic-kdpv/blob/master/static/example.jpg)
 
 
-Flask,Pillow
+Flask, Pillow
 
 
 
