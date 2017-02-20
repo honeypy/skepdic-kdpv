@@ -15,4 +15,12 @@ Output:
 
 ![After](https://github.com/honeypy/skepdic-kdpv/blob/master/static/example.jpg)
 
+
+Flask,Pillow
+
+
+
 Hosted: http://skepdic-kdpv.herokuapp.com/
+
+
+
